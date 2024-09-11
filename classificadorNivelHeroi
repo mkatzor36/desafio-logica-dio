@@ -1,0 +1,28 @@
+let herois = ["Novato", "Caçador", "Dovakinho", "Arqueiro", "Príncipe", "Tank", "Veterano", "Convidado12"] 
+let xpHerois = [425, 9900, 14250, 8100, 4675, 5500, 7800, 1200]
+
+for (let i = 0; i < herois.length; i++){
+
+    let nome = herois[i]
+    let pontosXP = xpHerois[i]
+    let nivel = ""
+
+    if(pontosXP >= 10001){
+        nivel = "Radiante"
+    } else if(pontosXP > 9001){
+        nivel = "Imortal"
+    } else if(pontosXP > 8001){
+        nivel = "Ascendente"
+    } else if(pontosXP > 7001){
+        nivel = "Platina"
+    } else if(pontosXP > 5001){
+        nivel = "Ouro"
+    } else if(pontosXP > 2001){
+        nivel = "Prata"
+    } else if(pontosXP > 1001){
+        nivel = "Bronze"
+    } else{
+        nivel = "Ferro"
+    }
+    console.log(`O Herói de nome ${nome} está no nível de ${nivel}`)
+}
